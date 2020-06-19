@@ -13,8 +13,10 @@
     position: fixed;
     top: -6%;
     left: -6%;
+
     width: 111.5%;
     height: 111.5%;
+
     justify-content: center;
     align-items: center;
 }
@@ -27,9 +29,10 @@
 .add-text {
     height: 100px;
     padding: 10px;
+    margin: 30px;
+
     border-radius: 8px;
     box-shadow: 10px 10px 39px -23px #000;
-    margin: 30px;
 
     text-align: left;
     font-size: 18px;
@@ -45,22 +48,23 @@
 
 
 .apply-text {
+    background: #FFF;
+    color: midnightblue;
+    
     width: 50px;
     padding: 10px 5px;
     margin: 0 0 0 68%;
+    
     border: 2px solid midnightblue;
     border-radius: 5px;
-    background: #FFF;
-    color: midnightblue;
-    transition: .3s;
     
     font-family: 'Nunito', sans-serif;
     font-weight: bolder;
+
+    transition: .3s;
 }
 
 .apply-text:hover {
     color: #fff;
     background-color: midnightblue;
-
 }
-

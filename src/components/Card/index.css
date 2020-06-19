@@ -1,24 +1,12 @@
 .actions {
-    display: flex;
     padding: 5px 0 0 0;
-    height: 50px;
     margin: auto;
     width: 6%;
-
+    height: 50px;
+    
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.actions svg {
-    padding: 5%;
-    transition: .2s;
-    pointer-events: bounding-box;
-}
-
-.actions svg:hover {
-    /* float: right; */
-    cursor: pointer;
-    /* transform: scale(1.2); */
 }
 
 .content-container {
@@ -28,12 +16,13 @@
 .item-text {
     padding: 0 7px;
     margin: auto;
-    text-align: center;
-    max-height: 110px;
     width: 94%;
-    overflow: scroll;
+    max-height: 110px;
 
+    text-align: center;
     font-size: 13px;
+    
+    overflow: scroll;
     cursor: text;
 }
 
