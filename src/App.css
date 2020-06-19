@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@400;600&display=swap');
+
+.container {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+    position: relative;
+    background: linear-gradient(to bottom, #1b6ca8,#1b6ca8 10%, #17202A 100%);
+    width: 280px;
+    height: 90%;
+    float: left;
+    padding-top: 2%;
+    border-radius: 10px;
+    box-shadow: 10px 14px 14px -6px #000;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board-title {
+    color: #000;
+    margin-top: 5%;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bolder;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.board div {
+    overflow-y: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+*::-webkit-scrollbar {
+    width: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board div > div {
+    overflow: hidden;
+}
+
+.add {
+    border: 1px solid #17202A;
+    background-color: #fff;
+    border-radius: 27%;
+    color: #17202A;
+    margin: 0px 0px 3% 80%;
+    transition: .3s;
+}
+
+.add:hover {
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    background-color: #17202A;
+    transform: scale(1.3);
+}
+
+[data-rbd-drag-handle-context-id="1"]:hover {
+    background-color: #ffffff;
 }
